@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images.png" sizes="16x16">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Survey Site |Admin Homepage</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
+
+	<script>
+		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+		body {
+			font-family: 'Montserrat';
+			/* background-image: linear-gradient(to bottom,
+					rgba(163, 11, 125, 0.5),
+					rgba(103, 103, 255, 0.5)) ,url('KPMG.webp'); */
+
+
+			/* background-blend-mode: saturation; */
+			/* background-image: linear-gradient(black, rgb(102, 16, 16)); */
+
+
+		}
+
+		.content 
+		{background-image: linear-gradient(to right, #33339994, #ff00ccaf), url('KPMG.webp');
+			backdrop-filter: contrast(80%);
+			background-size: cover;
+			/* background-position: center center; */
+			background-repeat: no-repeat;
+			height: 100%;
+			/* background-image: linear-gradient(to bottom, #333399a4,#ff00ccc2), url('KPMG.webp'); */
+			
+			/* background-image: linear-gradient(to right, #31b6c2c0,#7bc3937b), url('KPMG.webp'); */
+			/* backdrop-filter: contrast(80%);
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			height: 87.3vh; */
+			
+		}
+		.breadcrumb {
+			font-size: 12px;
+			margin-left: 5px;
+		}
+		
+.table-responsive{
+			padding-bottom: 9.9%;
+		}
+
+		.btn {
+			cursor: pointer;
+			background-color: black;
+			color: white;
+			
+		}
+		.abc:hover{
+			background-color: blue;
+		}
+		.abc{
+			
+		}
+		.wallpaper {
+			background-image: linear-gradient(to right, #33339994, #ff00ccaf), url('KPMG.webp');	
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 100vh;
+			
+		}
+	</style>
+</head>
+
+<body class="wallpaper">
+	<!-- TEMPLATE -->
+	<!-- NAV MENU -->
+	<nav class="navbar navbar-expand-md ">
+		<div class="container-fluid">
+			<a class="navbar-brand m-auto text-white" href="#"><img src="kpmg-logo.svg" width="70px"> |
+				SurveyCritical</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+				aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon navbar-dark"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav navbar-dark ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Add a Survey</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Add a Question</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Dropdown
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">View Surveys</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#">View Users' List</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="https://kpmg.com/">Visit KPMG Website</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="d-flex ps-4 pe-4" role="search">
+					<input class="form-control-sm border-1  " type="search" placeholder="Search SurveyCritical"
+						aria-label="Search">
+					<button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+
+				</form>
+			</div>
+		</div>
+	</nav>
+	
+		<!-- BREADCRUMB -->
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item active " aria-current="page"><a class="text-decoration-none text-white-50 " href="">Home</a></li>
+			</ol>
+		  </nav>
+		<div class="d-flex flex-row ">
+			<h1 class=" p-2 text-white">Welcome </h1><br>
+			<h1 class="p-2 text-warning text-decoration-underline ">
+				admin-name</h1>
+			<!-- HOME -->
+		</div>
+		<!-- TABLE -->
+		<!-- <h1 class="text-hide" style="background-image: url('KPMG.webp'); width: 500px; height: 50px;">Bootstrap</h1> -->
+		<div class="container mt-3">
+			<div class="table-responsive">
+				<table
+					class="table w-75 m-auto table-secondary table-hover border-primary border-2 align-middle text-center">
+					<thead class='table-dark align-middle table-bordered border-danger border-5'>
+						<tr>
+							<th scope="col" width="10%">Survey ID</th>
+							<th scope="col" width="20%">Survey Name</th>
+							<th scope="col" width="15%">Type</th>
+							<th scope="col" width="40%">Description</th>
+							<th scope="col" width="15%">Date Created</th>
+						</tr>
+					</thead>
+					<tbody class="">
+						<tr>
+							<td scope="row">R1C1</td>
+							<td>Survey Name 1</td>
+							<td>Crucial Info</td>
+							<td>someone looks, sounds, etc. : words that describe something or someone. [count]</td>
+							<td type="date">20-04-2000</td>
+						</tr>
+						<tr class="">
+							<td scope="row">R1C2</td>
+							<td>Survey Name 2</td>
+							<td>Crucial Info</td>
+							<td>words that describe something or someone. [count]</td>
+							<td type="date">20-04-2000</td>
+						</tr>
+						<tr class="">
+							<td scope="row">R1C3</td>
+							<td>Survey Name 3</td>
+							<td>Crucial Info</td>
+							<td>statement that tells you how something or someone looks, sounds, etc. : words that
+								describe
+								something or someone. [count]</td>
+							<td type="date">20-04-2000</td>
+						</tr>
+						<tr>
+							<td scope="row">R1C4</td>
+							<td>Survey Name 4</td>
+							<td>Crucial Info</td>
+							<td>: a statement that tells you how something</td>
+							<td type="date">20-04-2000</td>
+						</tr>
+						<tr class="">
+							<td scope="row">R1C5</td>
+							<td>Survey Name 5</td>
+							<td>Crucial Info</td>
+							<td>data insufficient</td>
+							<td type="date">20-04-2000</td>
+						</tr>
+						
+					</tbody>
+					
+				</table>
+				<table class="table w-75 m-auto table-secondary table-hover border-primary border-2 align-middle text-center">
+					<thead class="">
+				<tr class="abc">
+							<td></td>
+							<td><button class=" btn text-white  btn-outline-danger" type="submit">View Complete List</button> </td>
+							<td type="date"> </td>
+						</tr></thead></table>
+			</div>
+		</div>
+	
+</body>
+
+</html>

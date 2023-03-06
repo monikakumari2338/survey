@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<link rel="icon" type="image/x-icon" href="kpmg-logo.png">
+	<link rel="stylesheet" href="/public/css/register.css">
+
+	<title>Survey Pages | Register</title>
+
+
+</head>
+
+<body>
+	<div class='bold-line'></div>
+	<div class='container'>
+		<div class='window'>
+			<div class='overlay'></div>
+			<div class='content'>
+				<div class='welcome'>KPMG India</div>
+				<br>
+				<div class='subtitle'><strong>Admin</strong> <b>Registration</b></div>
+				<form name="regform" method="post" action="signin" onsubmit="return validation(), makerequest()">
+					<div class='input-fields'>
+						<div>
+							<input type='firstname' id="fname" placeholder='Firstname'
+								class='input-line full-width'></input>
+							<span id="firstname-err"></span>
+						</div>
+						<div>
+							<input type='lastname' id="lname" placeholder='Lastname'
+								class='input-line full-width'></input>
+							<span id="lastname-err"></span>
+						</div>
+						<div>
+							<input type='email' id="email" placeholder='Email' class='input-line full-width'></input>
+							<span id="email-err"></span>
+						</div>
+						<div>
+							<input type="password" id="password" name="pswd1" placeholder='Password'
+								class='input-line full-width'></input>
+							<span id="pass-err"></span>
+						</div>
+						{{!-- <div>
+							<input type="password" name="pswd2" placeholder='Confirm Password'
+								class='input-line full-width'></input>
+						</div> --}}
+						<div><button id="reg" class='ghost-round full-width'>Sign In</button></div>
+					</div>
+				</form>
+				<div class="link">
+					<p>Already have an account? <a href="/signin" style="color:red;">Login Here</a> </p>
+				</div>
+
+
+				<script src="register.js"></script>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

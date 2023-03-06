@@ -1,0 +1,36 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/public/css/index.css">
+  <link rel="icon" type="image/x-icon" href="kpmg-logo.png">
+  <title>Survey Pages | Login</title>
+</head>
+  	<body>
+		<div class='bold-line'></div>
+		<div class='container'>
+		  	<div class='window'>
+			 	<div class='overlay'></div>
+				<div class='content'>
+				  	<div class='welcome'>KPMG India</div>
+				  	<br>
+				  	<div class='subtitle'><strong>Admin</strong> <b>Login</b></div>
+                    <form name="loginform" method="post" action="/register" onsubmit="return validation()" >
+				  	<div class='input-fields'>
+					 	<div>
+							<span id="empty"></span>
+							<input type='email' name="email" id="email" placeholder='email' class='input-line full-width'></input>
+							<span id="email-err"></span>
+						</div>
+						<div>
+					 	<input type="password" id="password" placeholder='password' class='input-line full-width'></input>
+					 	<span id="pass-err"></span>
+						</div>
+						<div><button type="submit"id ="login" class='ghost-round full-width'>Log In</button></div>
+						</form>
+					    <div class="link"><p>New Admin? <a href="/signup"style="color:red;" >Please Sign Up </a> </p></div>
+                    <script src="index.js"></script>
+                    </div>      
+			 </div>
+		  	</div>
+		</div>
+  	</body>
+</html>
